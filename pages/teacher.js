@@ -1,9 +1,9 @@
 orion.pages.addTemplate(
     {
         template: 'about',
-        name: 'contact',
+        name: 'teachers',
         layout: 'layout',
-        description: 'About template(??)'
+        description: 'Uh. A second template'
     },
     {
         content: orion.attribute('froala', {
