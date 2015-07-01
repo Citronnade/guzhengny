@@ -1,0 +1,23 @@
+<template name="layout">
+    <head>
+        <title>Guzheng!</title>
+    </head>
+
+    <body>
+    <nav>
+        <div class="container nav-wrapper">
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="example.com">Link 1</a></li>
+                <li><a href="google.com">Link 2</a></li>
+                <li><a href="reddit.com">Link 3</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            {{>yield}}
+        </div>
+    </main>
+    </body>
+</template>
