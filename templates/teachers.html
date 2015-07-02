@@ -1,0 +1,9 @@
+<template name="teachers">
+  {{dict 'teachers.body' }}
+  {{#each get_teachers}}
+  <img src="{{this.url}}">
+  {{{this.body}}}
+  {{this.createdBy}}
+  {{/each}}
+  {{{content}}}
+</template>

@@ -1,23 +1,24 @@
 <template name="layout">
-    <head>
-        <title>Guzheng!</title>
-    </head>
+  <head>
+    <title>Guzheng!</title>
+  </head>
 
-    <body>
+  <body>
     <nav>
-        <div class="container nav-wrapper">
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="example.com">Link 1</a></li>
-                <li><a href="google.com">Link 2</a></li>
-                <li><a href="reddit.com">Link 3</a></li>
-            </ul>
-        </div>
+      <div class="container nav-wrapper">
+	<a href="#" class="brand-logo center"><img src={{dict 'site.logo.url'}}></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="example.com">Link 1</a></li>
+          <li><a href="google.com">Link 2</a></li>
+          <li><a href="reddit.com">Link 3</a></li>
+        </ul>
+      </div>
     </nav>
 
     <main>
-        <div class="container">
-            {{>yield}}
-        </div>
+      <div class="container">
+        {{>yield}}
+      </div>
     </main>
-    </body>
+  </body>
 </template>

@@ -68,6 +68,7 @@ orionjs:collections@1.1.0
 orionjs:config@1.1.2
 orionjs:core@1.1.0
 orionjs:dictionary@1.1.0
+orionjs:file-attribute@1.1.1
 orionjs:filesystem@1.1.0
 orionjs:froala@1.1.0
 orionjs:lang-en@1.1.1
@@ -93,6 +94,8 @@ underscore@1.0.3
 url@1.0.4
 useraccounts:core@1.8.1
 useraccounts:materialize@1.8.1
+vsivsi:file-collection@1.1.5
+vsivsi:orion-file-collection@0.1.0
 webapp@1.2.0
 webapp-hashing@1.0.3
 zimme:active-route@2.0.4_1

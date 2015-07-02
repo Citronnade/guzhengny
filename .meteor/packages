@@ -12,3 +12,6 @@ materialize:materialize
 orionjs:materialize
 orionjs:pages
 orionjs:froala
+orionjs:filesystem
+orionjs:file-attribute
+vsivsi:orion-file-collection
