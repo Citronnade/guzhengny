@@ -1,18 +1,39 @@
 <template name="layout">
     <nav class="deep-purple">
-      <div class="nav-wrapper">
-          <a href="#" class="brand-logo center"><img src={{dict 'site.logo.url'}}></a>
-          <ul id="nav-mobile" class="left hide-on-med-and-down">
-              {{#each pages}}
-                  <li><a href="{{path}}">{{title}}</a></li>
-              {{/each}}
-          </ul>
-      </div>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo center"><img src={{dict 'site.logo.url'}}></a>
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
+                {{#each pages}}
+                    <li><a href="{{path}}">{{title}}</a></li>
+                {{/each}}
+            </ul>
+        </div>
     </nav>
 
     <main>
-      <div class="container">
-        {{>yield}}
-      </div>
+        <div class="container">
+            {{>yield}}
+        </div>
     </main>
+
+    <footer class="page-footer deep-purple">
+        <div class="container">
+            <div class="row">
+                <div class="col 16 s9">
+                    <h5 class="white-text">Some stuff</h5>
+                </div>
+                <div class="col s3">
+                    <span class="gray-text text-lighten-4"> Some more stuff.</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2014 Copyright Text
+                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+        </div>
+
+
+    </footer>
 </template>
