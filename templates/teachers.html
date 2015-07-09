@@ -1,18 +1,20 @@
 <template name="teachers">
     <div class="row">
         {{#with get_teachers}}
-            <div class="col s3" id="teacher-list">
-                <ul>
+            <div class="col s3">
+                <div class="collection teacher-list deep-purple-text">
                     {{#each this}}
-                        <li id="{{teach_id this}}">{{this.name}}</li>
+                        <a href="#" class="collection-item" id="{{teach_id this}}">
+                            {{this.name}}
+                        </a>
                     {{/each}}
-                </ul>
+                </div>
             </div>
             <div class="col s9 teacher-container">
                 {{#each this}}
-                    <div class="teacher inactive" id="{{teach_id this}}">
+                    <div class="teacher inactive" id="bio-{{teach_id this}}">
                         <p>{{this.name}}</p>
-                        <img src="{{this.image.url}}" class="teacher-portrait"> <!-- use a class-->
+                        <img src="{{this.image.url}}" class="teacher-portrait">
                         {{{get_inner this.body}}}
 
                     </div>

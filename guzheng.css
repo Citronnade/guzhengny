@@ -1,8 +1,30 @@
-.inactive{
+.teacher.inactive{ /*uhm should use multi class selector*/
     display:none;
 }
 
 .teacher-portrait{
     width: 200px;
     float: left;
+    padding-right: 5px;
+
+}
+
+.collection-item.active{
+/* sass pls*/
+    background-color: #673ab7 !important;
+
+}
+
+.collection a.collection-item{
+    color: #673ab7;
+}
+
+/*
+html{
+    overflow-y:scroll;
+}
+*/
+
+main{
+    width: calc(100vw - 34px);
 }

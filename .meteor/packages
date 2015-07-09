@@ -15,3 +15,4 @@ orionjs:froala
 orionjs:filesystem
 orionjs:file-attribute
 vsivsi:orion-file-collection
+orionjs:iron-router-progress

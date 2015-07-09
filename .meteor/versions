@@ -71,6 +71,7 @@ orionjs:dictionary@1.1.0
 orionjs:file-attribute@1.1.1
 orionjs:filesystem@1.1.0
 orionjs:froala@1.1.0
+orionjs:iron-router-progress@1.0.3
 orionjs:lang-en@1.1.1
 orionjs:materialize@1.1.7
 orionjs:pages@1.1.2
