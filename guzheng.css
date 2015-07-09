@@ -1,0 +1,8 @@
+.inactive{
+    display:none;
+}
+
+.teacher-portrait{
+    width: 200px;
+    float: left;
+}

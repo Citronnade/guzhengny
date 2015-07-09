@@ -1,9 +1,25 @@
 <template name="teachers">
-  {{dict 'teachers.body' }}
-  {{#each get_teachers}}
-  <img src="{{this.url}}">
-  {{{this.body}}}
-  {{this.createdBy}}
-  {{/each}}
-  {{{content}}}
+    <div class="row">
+        {{#with get_teachers}}
+            <div class="col s3" id="teacher-list">
+                <ul>
+                    {{#each this}}
+                        <li id="{{teach_id this}}">{{this.name}}</li>
+                    {{/each}}
+                </ul>
+            </div>
+            <div class="col s9 teacher-container">
+                {{#each this}}
+                    <div class="teacher inactive" id="{{teach_id this}}">
+                        <p>{{this.name}}</p>
+                        <img src="{{this.image.url}}" class="teacher-portrait"> <!-- use a class-->
+                        {{{get_inner this.body}}}
+
+                    </div>
+
+                {{/each}}
+                {{{content}}}
+            </div>
+        {{/with}}
+    </div>
 </template>

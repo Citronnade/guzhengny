@@ -4,22 +4,22 @@ orion.dictionary.addDefinition('description', 'site', {
 });
 
 Teachers = new orion.collection("teachers",{
-    singularName: 'post',
+    singularName: 'teacher',
     pluralName: 'teachers',
     tabular: {
-	columns: [
-	    { data: "title", title: "Title" },
-	    /**
-	     * If you want to show a custom orion attribute in
-	     * the index table you must call this function
-	     * orion.attributeColumn(attributeType, key, label)
-	     */
-	    orion.attributeColumn('file', 'image', 'Image'),
-	    orion.attributeColumn('froala', 'body', 'Content'),
-	    orion.attributeColumn('createdBy', 'createdBy', 'Created By')
-	]
+        columns: [
+            { data: "name", title: "Name" },
+        /**
+         * If you want to show a custom orion attribute in
+         * the index table you must call this function
+         * orion.attributeColumn(attributeType, key, label)
+         */
+            orion.attributeColumn('file', 'image', 'Image'),
+            orion.attributeColumn('froala', 'body', 'Biography'),
+            orion.attributeColumn('createdBy', 'createdBy', 'Created By')
+        ]
     }
-    
+
 });
 if (Meteor.isClient){
     Template.teachers.helpers({
@@ -37,8 +37,8 @@ orion.dictionary.addDefinition('logo', 'site',
 );
 
 Teachers.attachSchema(new SimpleSchema({
-    title:{
-	type: String
+    name:{
+        type: String
     },
     
     image: orion.attribute('file', {

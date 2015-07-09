@@ -1,17 +1,12 @@
 <template name="layout">
-  <head>
-    <title>Guzheng!</title>
-  </head>
-
-  <body>
-    <nav>
-      <div class="container nav-wrapper">
-	<a href="#" class="brand-logo center"><img src={{dict 'site.logo.url'}}></a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="example.com">Link 1</a></li>
-          <li><a href="google.com">Link 2</a></li>
-          <li><a href="reddit.com">Link 3</a></li>
-        </ul>
+    <nav class="deep-purple">
+      <div class="nav-wrapper">
+          <a href="#" class="brand-logo center"><img src={{dict 'site.logo.url'}}></a>
+          <ul id="nav-mobile" class="left hide-on-med-and-down">
+              {{#each pages}}
+                  <li><a href="{{path}}">{{title}}</a></li>
+              {{/each}}
+          </ul>
       </div>
     </nav>
 
@@ -20,5 +15,4 @@
         {{>yield}}
       </div>
     </main>
-  </body>
 </template>

@@ -23,7 +23,7 @@ fastclick@1.0.3
 fortawesome:fontawesome@4.2.0_2
 froala:editor@1.2.7
 geojson-utils@1.0.3
-gildaspk:autoform-materialize@0.0.19
+gildaspk:autoform-materialize@0.0.20
 html-tools@1.0.4
 htmljs@1.0.4
 http@1.1.0
@@ -63,7 +63,7 @@ observe-sequence@1.0.6
 ordered-dict@1.0.3
 orionjs:accounts@1.1.0
 orionjs:attributes@1.1.0
-orionjs:base@1.1.2
+orionjs:base@1.1.3
 orionjs:collections@1.1.0
 orionjs:config@1.1.2
 orionjs:core@1.1.0
