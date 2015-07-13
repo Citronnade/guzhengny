@@ -35,3 +35,11 @@ body {
     min-height: 100vh;
     flex-direction: column;
 }
+
+.banner{
+    min-height: 80vh;
+    /*background-image: url('public/5.jpg');*/
+    background-image:url('https://mdn.mozillademos.org/files/8971/firefox_logo.png');    
+    background-size: cover;
+    
+}

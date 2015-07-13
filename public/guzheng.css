@@ -1,0 +1,54 @@
+.teacher.inactive {
+    /*uhm should use multi class selector*/
+    display: none;
+}
+.teacher-portrait {
+    width: 200px;
+    float: left;
+    padding-right: 5px;
+}
+.collection-item.active {
+    /* sass pls*/
+    background-color: #673ab7 !important;
+}
+.collection a.collection-item {
+    color: #673ab7;
+}
+
+/*
+html{
+    overflow-y:scroll;
+}
+*/
+
+main {
+    width: calc(100vw - 34px);
+    flex: 1 0 auto;
+}
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+.banner {
+    padding-top: 0;
+    margin-top: 0px;
+    min-height: 80vh;
+    background-image: url('5.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+}
+.banner banner-text {
+    margin-top: 0px;    
+    /*what the fuck?*/
+}
+
+.banner h1{
+    margin: 0 auto;
+    padding-top: 30vh;
+}
+
+main .content{
+    min-height: 100px;
+}
