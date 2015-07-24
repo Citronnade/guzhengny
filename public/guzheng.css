@@ -53,11 +53,7 @@ main .content{
     min-height: 100px;
 }
 
-.instruments{
-    max-height: 200px;
-
+.image img{
+    max-height: 150px;
 }
 
-.image{
-    height:100%;
-}

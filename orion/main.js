@@ -42,14 +42,45 @@ Teachers.attachSchema(new SimpleSchema({
     },
     
     image: orion.attribute('file', {
-	label: 'Teacher image',
-	optional: true
+        label: 'Teacher image',
+        optional: true
     }),
 
     body: orion.attribute('froala',{
-	label: 'Description/biography'
+        label: 'Description/biography'
     }),
 
     createdBy: orion.attribute('createdBy') 
     
+}));
+
+Gallery = new orion.collection("gallery", {
+    singularName: 'image',
+    pluralName: 'images',
+    link: {
+        title: 'Gallery'
+    },
+    tabular:{
+        columns:[
+            {data: "title", title: "Title"},
+            {data: "description", label: "Description"}, //uhm..,...
+            orion.attributeColumn('image', 'image', 'Image'),
+            orion.attributeColumn('file', 'image2', 'Image2')
+        ]
+    }
+});
+
+Gallery.attachSchema(new SimpleSchema({
+    title:{
+        type: String
+    },
+    description:{
+        type: String
+    },
+    image: orion.attribute('image', {
+        label: "Image"
+    }),
+    image2: orion.attribute('file', {
+        label: "Image2, file"
+    })
 }));
