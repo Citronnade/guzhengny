@@ -23,9 +23,13 @@ Teachers = new orion.collection("teachers",{
 });
 if (Meteor.isClient){
     Template.teachers.helpers({
-	"get_teachers":function(){
-	    return Teachers.find(); //change to template-level subs maybe?
-	}
+        "get_teachers":function(){
+            return Teachers.find(); //change to template-level subs maybe?
+        }
+    });
+
+    Template.home.onCreated(function(){ //testing
+        console.log(Router.current().route.getName());
     })
 }
 
@@ -65,7 +69,6 @@ Gallery = new orion.collection("gallery", {
             {data: "title", title: "Title"},
             {data: "description", label: "Description"}, //uhm..,...
             orion.attributeColumn('image', 'image', 'Image'),
-            orion.attributeColumn('file', 'image2', 'Image2')
         ]
     }
 });
@@ -80,7 +83,4 @@ Gallery.attachSchema(new SimpleSchema({
     image: orion.attribute('image', {
         label: "Image"
     }),
-    image2: orion.attribute('file', {
-        label: "Image2, file"
-    })
 }));
