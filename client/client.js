@@ -46,3 +46,24 @@ Template.teachers.helpers({
     }
 });
 
+
+Template.contactForm.helpers({
+    contactFormSchema: function() {
+        return Schema.contact;
+    }
+});
+
+
+
+var hooksObject = {
+    onSuccess: function(formType, result){
+        console.log(formType);
+        console.log("Successfully sent email");
+        Materialize.toast("Successfully sent email", 4000);
+    },
+    onError: function(formType, error){
+        console.log(formType);
+        console.log(error);
+    }
+};
+AutoForm.addHooks('contactForm', hooksObject);
