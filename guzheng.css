@@ -1,21 +1,17 @@
-.teacher.inactive{ /*uhm should use multi class selector*/
-    display:none;
+.teacher.inactive {
+    /*uhm should use multi class selector*/
+    display: none;
 }
-
-.teacher-portrait{
+.teacher-portrait {
     width: 200px;
     float: left;
     padding-right: 5px;
-
 }
-
-.collection-item.active{
-/* sass pls*/
+.collection-item.active {
+    /* sass pls*/
     background-color: #673ab7 !important;
-
 }
-
-.collection a.collection-item{
+.collection a.collection-item {
     color: #673ab7;
 }
 
@@ -25,21 +21,89 @@ html{
 }
 */
 
-main{
-    width: calc(100vw - 34px);
+main {
+    /*width: calc(100vw - 34px);*/
     flex: 1 0 auto;
 }
-
 body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
 }
-
-.banner{
+.banner {
+    padding-top: 0;
+    margin: 0;
+    /*margin-top: 0;*/
     min-height: 80vh;
-    /*background-image: url('public/5.jpg');*/
-    background-image:url('https://mdn.mozillademos.org/files/8971/firefox_logo.png');    
+    background: url('people2.jpg') no-repeat center center fixed;
+    /*background-image: url('5.jpg');*/
     background-size: cover;
-    
+    /*background-attachment: fixed;*/
+    /*z-index: -1;*/
+    /*max-width: 100%;*/
+
+}
+
+.banner .card-panel{
+    margin-top: 30vh;
+    /*background-color: #EFFFEA;*/
+    font-weight: 200;
+    font-size: 60px;
+}
+
+h3{
+    font-weight: 300;
+}
+
+/*
+.banner h1{
+    margin: 0 auto;
+    padding-top: 30vh;
+}
+*/
+main .content{
+    min-height: 100px;
+}
+
+.image img{
+    height: 225px;
+
+}
+
+.description{
+    text-align: left;
+}
+
+.content{
+    font-size: 18px;
+}
+
+.instruments{
+    background-color: white;
+}
+
+.title{
+    font-size: 22px;
+    font-weight:400;
+    border-top: solid 2px #c8e6c9;
+}
+
+p{
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+
+.map-container {
+    width: 800px;
+    max-width: 100%;
+    height: 500px;
+}
+
+.location, .contact{
+    border-top: solid 2px #c8e6c9;
+    padding-top: 40px;
+}
+
+i.material-icons{
+    font-size: 0.7rem;
 }

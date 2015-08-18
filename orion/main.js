@@ -22,6 +22,38 @@ Teachers = new orion.collection("teachers",{
 
 });
 if (Meteor.isClient){
+/*
+    Template.body.helpers({ //TODO: Move to own template
+       exampleMapOptions: function(){
+           if(GoogleMaps.loaded()){
+               return{
+                   center: new google.maps.LatLng(40.761153,-73.831819),
+                   zoom: 8
+               };
+           }
+       }
+    });
+
+    Template.body.onCreated(function(){
+        GoogleMaps.ready('exampleMap', function(map){
+            var marker = new google.maps.Marker({
+                position: map.options.center,
+                map: map.instance
+            })
+        })
+    });
+    */
+/*
+    Template.body.rendered(function(){
+        var mapOptions = {
+            center: new google.maps.LatLng(-34.397, 150.644),
+            zoom: 8,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        map = new google.maps.Map(document.getElementById("map-container"), mapOptions);
+    });
+*/
+
     Template.teachers.helpers({
         "get_teachers":function(){
             return Teachers.find(); //change to template-level subs maybe?
