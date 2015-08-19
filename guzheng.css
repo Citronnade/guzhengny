@@ -44,11 +44,13 @@ body {
 
 }
 
-.banner .card-panel{
+.banner .text-container{
     margin-top: 30vh;
     /*background-color: #EFFFEA;*/
     font-weight: 200;
-    font-size: 60px;
+    font-size: 70px;
+    background-color: transparent;
+
 }
 
 h3{
